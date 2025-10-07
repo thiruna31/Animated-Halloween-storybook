@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/spooky_button.dart';
 
 class StoryPage1 extends StatelessWidget {
   @override
@@ -10,11 +11,18 @@ class StoryPage1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("assets/images/forest.png", width: 210),
-            Text("You walk into a dark forest... something moves!"),
+            SizedBox(height: 16),
+            Text(
+              "You walk into a dark forest... something moves!",
+              style: TextStyle(fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
             SizedBox(height: 32),
-            ElevatedButton(
-              onPressed: () => Navigator.pushNamed(context, '/story2'),
-              child: Text("Continue →"),
+            SpookyButton(
+              text: "Continue →",
+              onPressed: () {
+                Navigator.pushNamed(context, '/story2');
+              },
             ),
           ],
         ),
