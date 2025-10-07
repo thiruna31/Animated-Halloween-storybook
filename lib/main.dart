@@ -4,9 +4,13 @@ import 'pages/story_page1.dart';
 import 'pages/story_page2.dart';
 import 'pages/end_page.dart';
 
-void main() => runApp(HalloweenStorybook());
+void main() {
+  runApp(const HalloweenStorybook());
+}
 
 class HalloweenStorybook extends StatelessWidget {
+  const HalloweenStorybook({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,10 +22,10 @@ class HalloweenStorybook extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (_) => IntroPage(),
-        '/story1': (_) => StoryPage1(),
-        '/story2': (_) => StoryPage2(),
-        '/end': (_) => EndPage(),
+        '/': (context) => const IntroPage(),
+        '/story1': (context) => const StoryPage1(),
+        '/story2': (context) => const StoryPage2(),
+        '/end': (context) => const EndPage(),
       },
     );
   }
