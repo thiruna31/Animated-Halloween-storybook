@@ -9,9 +9,9 @@ class StoryPage1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("assets/images/forest.png", width: 200),
+            Image.asset("assets/images/forest.png", width: 210),
             Text("You walk into a dark forest... something moves!"),
-            SizedBox(height: 30),
+            SizedBox(height: 32),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/story2'),
               child: Text("Continue →"),
