@@ -17,8 +17,8 @@ class HalloweenStorybook extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Animated Halloween Storybook',
       theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.orange,
-        scaffoldBackgroundColor: Colors.black,
+        primaryColor: const Color.fromARGB(255, 216, 130, 1),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 2, 2, 2),
       ),
       initialRoute: '/',
       routes: {
