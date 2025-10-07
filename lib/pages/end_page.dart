@@ -7,7 +7,7 @@ class EndPage extends StatelessWidget {
       body: Center(
         child: Text(
           "🕷️ The End — Happy Halloween! 🕷️",
-          style: TextStyle(fontSize: 26, color: const Color.fromARGB(255, 222, 61, 250)),
+          style: TextStyle(fontSize: 26, color: const Color.fromARGB(255, 225, 57, 254)),
         ),
       ),
     );
